@@ -1,0 +1,56 @@
+.image-set{
+    background-color:#00171F ;
+}
+.image-set .card{
+    margin: 0;
+    padding:0;
+    cursor: pointer;
+    border: 0 !important;
+}
+.image-set .card .gallery image{
+position:relative;
+
+}
+
+.gallery-image img{
+width:100%;
+box-sizing: border-box;
+
+
+}
+.gallery-content{
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+   width:100%;
+   height:100%;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   padding:1.35rem;
+   font-weight: 800;
+   border-radius: 0 0 0.35em 0.35em;
+background-color:#bf0603bb ;
+color:white;
+transition:all 0.25s ease-in-out;
+}
+.card:hover .gallery-content{
+   display: flex;
+}
+
+
+
+@media(max-width:970px){
+
+        .gallery-content{
+            position: relative;
+            display: block;
+            background-color: white;
+            color:#BF0603;
+        }
+      
+}
+
+
