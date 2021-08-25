@@ -29,7 +29,7 @@ box-sizing: border-box;
    align-items: center;
    text-align: center;
    justify-content: center;
-   padding:1.35rem;
+   padding:1.5rem;
    font-weight: 800;
    border-radius: 0 0 0.35em 0.35em;
 background-color:#bf0603bb ;
@@ -38,6 +38,34 @@ transition:all 0.25s ease-in-out;
 }
 .card:hover .gallery-content{
    display: flex;
+}
+.image-set .card:before ,
+.image-set .card:after{
+    content:'';
+    width:0;
+    height:0;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.image-set .card:before{
+    bottom:5%;
+    left:5%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.image-set .card:after{
+    top:5%;
+    right:5%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.image-set .card:hover:before ,
+.image-set .card:hover:after{
+    opacity: 1;
+    width:90%;
+    height:90%;
 }
 
 
